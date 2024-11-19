@@ -1,0 +1,85 @@
+import { Text, SafeAreaView, StyleSheet } from 'react-native';
+
+// You can import supported modules from npm
+import { Card } from 'react-native-paper';
+
+// or any files within the Snack
+import AssetExample from './components/AssetExample';
+
+export default function App() {
+  return (
+    <SafeAreaView style={styles.container}>
+    <Text style={styles.title}>
+        Student Profile
+    </Text>
+      <Text style={styles.paragraph}>
+        Name: 
+      </Text>
+      <Text style={styles.content}>
+        Shaina P. Sumagaysay {'\n'} 
+      </Text>
+      <Text style={styles.paragraph}>
+        Age: 
+      </Text>
+      <Text style={styles.content}>
+        20 {'\n'} 
+      </Text>
+      <Text style={styles.paragraph}>
+        Course/Year/Section: 
+      </Text>
+      <Text style={styles.content}>
+        BS Computer Science, 3rd Year, Section 3 {'\n'} 
+      </Text>
+      <Text style={styles.paragraph}>
+        About me: 
+      </Text>
+      <Text style={styles.content}>
+        I like Cats {'\n'} 
+        I enjoy watching, Movies and Series{'\n'} 
+        I listen to Taylor Swift {'\n'} 
+      </Text>
+      <Text style={styles.paragraph}>
+        Achievements: 
+      </Text>
+      <Text style={styles.content}>
+        - CSSO Support Council (2022) {'\n'}
+        - President's Lister (2022-2023) {'\n'}
+        - President's Lister (2023-2024){'\n'}
+      </Text>
+      <Text style={styles.paragraph}>
+        Skills: 
+      </Text>
+      <Text style={styles.content}>
+        - Java {'\n'} 
+        - Javascript {'\n'} 
+        - Database Management
+      </Text> 
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ecf0f1',
+    padding: 5,
+  },
+  title: {
+    margin: 30,
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  paragraph: {
+    marginLeft: 10,
+    marginBottom: -8,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+  content: {
+    margin: 10,
+    fontSize: 18,
+    textAlign: 'left',
+  },
+});
